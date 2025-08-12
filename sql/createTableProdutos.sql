@@ -5,7 +5,3 @@ CREATE TABLE produtos (
 	precoVenda NUMERIC(10,2) NOT NULL,
 	quantEstoque INT NOT NULL
 )
-
-delete from produtos
-
-SELECT * FROM produtos;
