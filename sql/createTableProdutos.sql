@@ -1,0 +1,11 @@
+CREATE TABLE produtos (
+	id SERIAL PRIMARY KEY,
+	nome VARCHAR(100) NOT NULL,
+	categoria VARCHAR(100) NOT NULL,
+	precoVenda NUMERIC(10,2) NOT NULL,
+	quantEstoque INT NOT NULL
+)
+
+delete from produtos
+
+SELECT * FROM produtos;

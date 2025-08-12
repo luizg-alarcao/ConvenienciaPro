@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.convenience.controller.CadastroProdutoController"
+      spacing="15" alignment="CENTER" styleClass="root-pane"
+      stylesheets="@../styles.css">
+
+    <!-- Título -->
+    <Label text="Cadastro de Produtos" styleClass="header-title"/>
+
+    <!-- Formulário -->
+    <GridPane styleClass="grid-pane" hgap="10" vgap="10" alignment="CENTER">
+        <columnConstraints>
+            <ColumnConstraints percentWidth="30"/>
+            <ColumnConstraints percentWidth="70"/>
+        </columnConstraints>
+
+        <!-- Linha 1: Nome -->
+        <Label text="Nome:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtNome" promptText="Ex: Coca-Cola 350ml"
+                   GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+
+        <!-- Linha 2: Categoria -->
+        <Label text="Categoria:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+        <ComboBox fx:id="cbCategoria" promptText="Selecione..."
+                  GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+        <!-- Linha 3: Preço -->
+        <Label text="Preço Venda:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtPrecoVenda" promptText="Ex: 5.99"
+                   GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+
+        <!-- Linha 4: Estoque -->
+        <Label text="Estoque:" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+        <TextField fx:id="txtQuantEstoque" promptText="Ex: 50"
+                   GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+    </GridPane>
+
+    <!-- Mensagens -->
+    <Label fx:id="lblMensagem" styleClass="mensagem" wrapText="true"
+           maxWidth="300" textAlignment="CENTER"/>
+
+    <!-- Botões -->
+    <HBox spacing="15" alignment="CENTER">
+        <Button fx:id="btnSalvar" text="Salvar" onAction="#onSalvar"
+                styleClass="button btn-primary"/>
+        <Button fx:id="btnLimpar" text="Limpar" onAction="#onLimpar"
+                styleClass="button btn-secondary"/>
+    </HBox>
+</VBox>

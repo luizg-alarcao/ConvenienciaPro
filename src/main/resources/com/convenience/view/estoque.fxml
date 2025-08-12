@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/20"
+      xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.convenience.controller.EstoqueController"
+      spacing="15"
+      alignment="TOP_CENTER"
+      styleClass="root-pane"
+      stylesheets="@../styles.css">
+
+    <Label text="Controle de Estoque" styleClass="header-title"/>
+
+    <HBox spacing="10" alignment="CENTER">
+        <TextField fx:id="txtBusca" promptText="Buscar produto..." styleClass="search-field"/>
+        <Button text="Buscar" onAction="#onBuscar" styleClass="button btn-primary"/>
+        <Button text="Atualizar" onAction="#onAtualizar" styleClass="button btn-secondary"/>
+    </HBox>
+
+    <!-- Tabela de estoque -->
+    <TableView fx:id="tabelaEstoque" styleClass="estoque-table">
+        <columns>
+            <TableColumn text="ID" fx:id="colId" prefWidth="50"/>
+            <TableColumn text="Nome" fx:id="colNome" prefWidth="200"/>
+            <TableColumn text="Categoria" fx:id="colCategoria" prefWidth="150"/>
+            <TableColumn text="Preço" fx:id="colPreco" prefWidth="100"/>
+            <TableColumn text="Estoque" fx:id="colEstoque" prefWidth="100"/>
+            <TableColumn text="Ações" fx:id="colAcoes" prefWidth="180"/>
+        </columns>
+    </TableView>
+
+    <Label fx:id="lblTotal" styleClass="footer-label"/>
+
+</VBox>

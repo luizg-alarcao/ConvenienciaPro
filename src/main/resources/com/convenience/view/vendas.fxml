@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.convenience.controller.VendasController"
+            stylesheets="@/com/convenience/styles.css">
+
+    <top>
+        <HBox spacing="15" alignment="CENTER" BorderPane.alignment="CENTER">
+            <padding>
+                <Insets top="15" right="15" bottom="15" left="15"/>
+            </padding>
+            <Label text="Tela de Vendas" styleClass="header-title"/>
+            <Button text="Nova Comanda" onAction="#criarComanda" styleClass="btn-primary"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ScrollPane fitToWidth="true">
+            <content>
+                <FlowPane fx:id="painelComandas" hgap="20" vgap="20">
+                    <padding>
+                        <Insets top="10" right="10" bottom="10" left="10"/>
+                    </padding>
+                </FlowPane>
+            </content>
+        </ScrollPane>
+    </center>
+
+</BorderPane>

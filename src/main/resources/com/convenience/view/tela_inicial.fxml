@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.convenience.controller.TelaInicialController"
+            stylesheets="@../styles.css">
+
+    <top>
+        <VBox alignment="CENTER" styleClass="header-box">
+            <Label text="ConveniênciaPro" styleClass="header-title"/>
+        </VBox>
+    </top>
+
+    <center>
+        <VBox alignment="CENTER" spacing="20">
+            <Button text="Cadastrar Produto" styleClass="menu-button"
+                    onAction="#abrirCadastroProduto"/>
+            <Button text="Consultar Estoque" styleClass="menu-button"
+                    onAction="#abrirEstoque"/>
+            <Button text="Realizar Venda" styleClass="menu-button"
+                    onAction="#abrirTelaVendas"/>
+            <Button text="Relatórios" styleClass="menu-button"/>
+        </VBox>
+    </center>
+
+    <bottom>
+        <VBox alignment="CENTER" styleClass="footer-box">
+            <Label text="Sistema de Gestão para Lojas de Conveniência / v1.0" id="rodape"/>
+            <Label text="Desenvolvido por Luiz Gustavo Alarcão" id="autor"/>
+        </VBox>
+    </bottom>
+
+</BorderPane>
