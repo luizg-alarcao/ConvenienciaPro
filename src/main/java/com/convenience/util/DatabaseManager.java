@@ -13,9 +13,9 @@ public class DatabaseManager {
         //Para o programa funcionar na sua máquina crie uma database nova no PostgreSQL
         //Em seguida execute o código para criar a tabela no Postgres, o arquivo está na pasta sql com nome "createTable.sql"
         //Se quiser usar MySQL tem que trocar a dependency no Maven (pom.xml)
-        config.setJdbcUrl("jdbc:postgresql://localhost:5432/convenience"); //Adicione o URL do seu database
+        config.setJdbcUrl("jdbc:postgresql://localhost:5432/SeuDatabase"); //Adicione o URL do seu database
         config.setUsername("postgres"); //Aqui adiciona o usuario
-        config.setPassword("1"); //Aqui adiciona sua senha do database
+        config.setPassword("Senha"); //Aqui adiciona sua senha do database
 
         config.setMaximumPoolSize(5);
         config.setMinimumIdle(1);
