@@ -92,6 +92,20 @@
     -fx-text-fill: white;
 }
 
+.btn-editar {
+    -fx-background-color: #3b82f6;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+}
+
+.btn-excluir {
+    -fx-background-color: #ef4444;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 6;
+}
+
 .button:hover {
     -fx-opacity: 0.9;
 }
@@ -139,18 +153,4 @@
     -fx-padding: 8px 0px 5px 0px;
     -fx-font-size: 12px;
     -fx-text-fill: #7f8c8d;
-}
-
-.btn-editar {
-    -fx-background-color: #3b82f6;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-background-radius: 6;
-}
-
-.btn-excluir {
-    -fx-background-color: #ef4444;
-    -fx-text-fill: white;
-    -fx-font-weight: bold;
-    -fx-background-radius: 6;
 }
